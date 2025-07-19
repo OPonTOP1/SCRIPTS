@@ -7,8 +7,8 @@ screenGui.Name = "TicketGUI"
 screenGui.ResetOnSpawn = false
 
 local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 200, 0, 160)
-frame.Position = UDim2.new(0.5, -100, 0.5, -80)
+frame.Size = UDim2.new(0, 200, 0, 360)
+frame.Position = UDim2.new(0.5, -100, 0.5, -180)
 frame.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
 frame.BorderSizePixel = 0
 frame.Active = true
@@ -40,12 +40,12 @@ shadowCorner.CornerRadius = UDim.new(0, 15)
 shadowCorner.Parent = shadow
 
 local button = Instance.new("TextButton")
-button.Size = UDim2.new(0.85, 0, 0.4, 0)
-button.Position = UDim2.new(0.075, 0, 0.2, 0)
+button.Size = UDim2.new(0.85, 0, 0.15, 0)
+button.Position = UDim2.new(0.075, 0, 0.05, 0)
 button.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
-button.Text = "INSTANT UGC"
+button.Text = "COLLECT"
 button.TextColor3 = Color3.fromRGB(255, 255, 255)
-button.TextSize = 24
+button.TextSize = 20
 button.Font = Enum.Font.GothamBlack
 button.TextStrokeTransparency = 0.5
 button.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
@@ -75,9 +75,153 @@ local buttonShadowCorner = Instance.new("UICorner")
 buttonShadowCorner.CornerRadius = UDim.new(0, 12)
 buttonShadowCorner.Parent = buttonShadow
 
+local button2 = Instance.new("TextButton")
+button2.Size = UDim2.new(0.85, 0, 0.15, 0)
+button2.Position = UDim2.new(0.075, 0, 0.25, 0)
+button2.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+button2.Text = "UGC1"
+button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+button2.TextSize = 20
+button2.Font = Enum.Font.GothamBlack
+button2.TextStrokeTransparency = 0.5
+button2.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+button2.Parent = frame
+
+local button2Corner = Instance.new("UICorner")
+button2Corner.CornerRadius = UDim.new(0, 12)
+button2Corner.Parent = button2
+
+local button2Glow = Instance.new("UIStroke")
+button2Glow.Thickness = 2
+button2Glow.Color = Color3.fromRGB(100, 200, 255)
+button2Glow.Transparency = 0.2
+button2Glow.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+button2Glow.Parent = button2
+
+local button2Shadow = Instance.new("Frame")
+button2Shadow.Size = UDim2.new(1, 4, 1, 4)
+button2Shadow.Position = UDim2.new(0, 2, 0, 2)
+button2Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button2Shadow.BackgroundTransparency = 0.7
+button2Shadow.BorderSizePixel = 0
+button2Shadow.ZIndex = -1
+button2Shadow.Parent = button2
+
+local button2ShadowCorner = Instance.new("UICorner")
+button2ShadowCorner.CornerRadius = UDim.new(0, 12)
+button2ShadowCorner.Parent = button2Shadow
+
+local button3 = Instance.new("TextButton")
+button3.Size = UDim2.new(0.85, 0, 0.15, 0)
+button3.Position = UDim2.new(0.075, 0, 0.45, 0)
+button3.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+button3.Text = "UGC2"
+button3.TextColor3 = Color3.fromRGB(255, 255, 255)
+button3.TextSize = 20
+button3.Font = Enum.Font.GothamBlack
+button3.TextStrokeTransparency = 0.5
+button3.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+button3.Parent = frame
+
+local button3Corner = Instance.new("UICorner")
+button3Corner.CornerRadius = UDim.new(0, 12)
+button3Corner.Parent = button3
+
+local button3Glow = Instance.new("UIStroke")
+button3Glow.Thickness = 2
+button3Glow.Color = Color3.fromRGB(100, 200, 255)
+button3Glow.Transparency = 0.2
+button3Glow.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+button3Glow.Parent = button3
+
+local button3Shadow = Instance.new("Frame")
+button3Shadow.Size = UDim2.new(1, 4, 1, 4)
+button3Shadow.Position = UDim2.new(0, 2, 0, 2)
+button3Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button3Shadow.BackgroundTransparency = 0.7
+button3Shadow.BorderSizePixel = 0
+button3Shadow.ZIndex = -1
+button3Shadow.Parent = button3
+
+local button3ShadowCorner = Instance.new("UICorner")
+button3ShadowCorner.CornerRadius = UDim.new(0, 12)
+button3ShadowCorner.Parent = button3Shadow
+
+local button4 = Instance.new("TextButton")
+button4.Size = UDim2.new(0.85, 0, 0.15, 0)
+button4.Position = UDim2.new(0.075, 0, 0.65, 0)
+button4.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+button4.Text = "UGC3"
+button4.TextColor3 = Color3.fromRGB(255, 255, 255)
+button4.TextSize = 20
+button4.Font = Enum.Font.GothamBlack
+button4.TextStrokeTransparency = 0.5
+button4.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+button4.Parent = frame
+
+local button4Corner = Instance.new("UICorner")
+button4Corner.CornerRadius = UDim.new(0, 12)
+button4Corner.Parent = button4
+
+local button4Glow = Instance.new("UIStroke")
+button4Glow.Thickness = 2
+button4Glow.Color = Color3.fromRGB(100, 200, 255)
+button4Glow.Transparency = 0.2
+button4Glow.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+button4Glow.Parent = button4
+
+local button4Shadow = Instance.new("Frame")
+button4Shadow.Size = UDim2.new(1, 4, 1, 4)
+button4Shadow.Position = UDim2.new(0, 2, 0, 2)
+button4Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button4Shadow.BackgroundTransparency = 0.7
+button4Shadow.BorderSizePixel = 0
+button4Shadow.ZIndex = -1
+button4Shadow.Parent = button4
+
+local button4ShadowCorner = Instance.new("UICorner")
+button4ShadowCorner.CornerRadius = UDim.new(0, 12)
+button4ShadowCorner.Parent = button4Shadow
+
+local button5 = Instance.new("TextButton")
+button5.Size = UDim2.new(0.85, 0, 0.15, 0)
+button5.Position = UDim2.new(0.075, 0, 0.85, 0)
+button5.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
+button5.Text = "UGC4"
+button5.TextColor3 = Color3.fromRGB(255, 255, 255)
+button5.TextSize = 20
+button5.Font = Enum.Font.GothamBlack
+button5.TextStrokeTransparency = 0.5
+button5.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+button5.Parent = frame
+
+local button5Corner = Instance.new("UICorner")
+button5Corner.CornerRadius = UDim.new(0, 12)
+button5Corner.Parent = button5
+
+local button5Glow = Instance.new("UIStroke")
+button5Glow.Thickness = 2
+button5Glow.Color = Color3.fromRGB(100, 200, 255)
+button5Glow.Transparency = 0.2
+button5Glow.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+button5Glow.Parent = button5
+
+local button5Shadow = Instance.new("Frame")
+button5Shadow.Size = UDim2.new(1, 4, 1, 4)
+button5Shadow.Position = UDim2.new(0, 2, 0, 2)
+button5Shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+button5Shadow.BackgroundTransparency = 0.7
+button5Shadow.BorderSizePixel = 0
+button5Shadow.ZIndex = -1
+button5Shadow.Parent = button5
+
+local button5ShadowCorner = Instance.new("UICorner")
+button5ShadowCorner.CornerRadius = UDim.new(0, 12)
+button5ShadowCorner.Parent = button5Shadow
+
 local creditLabel = Instance.new("TextLabel")
-creditLabel.Size = UDim2.new(0.85, 0, 0.25, 0)
-creditLabel.Position = UDim2.new(0.075, 0, 0.7, 0)
+creditLabel.Size = UDim2.new(0.85, 0, 0.1, 0)
+creditLabel.Position = UDim2.new(0.075, 0, 0.9, 0)
 creditLabel.BackgroundTransparency = 1
 creditLabel.Text = "Credit by: Zz | Scripter"
 creditLabel.TextColor3 = Color3.fromRGB(200, 200, 255)
@@ -87,10 +231,14 @@ creditLabel.Parent = frame
 
 local function adjustGuiForMobile()
     if UserInputService.TouchEnabled then
-        frame.Size = UDim2.new(0, 160, 0, 130)
-        frame.Position = UDim2.new(0.5, -80, 0.5, -65)
-        button.TextSize = 20
-        creditLabel.TextSize = 14
+        frame.Size = UDim2.new(0, 160, 0, 300)
+        frame.Position = UDim2.new(0.5, -80, 0.5, -150)
+        button.TextSize = 16
+        button2.TextSize = 16
+        button3.TextSize = 16
+        button4.TextSize = 16
+        button5.TextSize = 16
+        creditLabel.TextSize = 12
     end
 end
 adjustGuiForMobile()
@@ -104,51 +252,58 @@ local tweenInfo = TweenInfo.new(
     false,
     0
 )
-local tween = TweenService:Create(frame, tweenInfo, {Size = UDim2.new(0, 200, 0, 160)})
+local tween = TweenService:Create(frame, tweenInfo, {Size = UDim2.new(0, 200, 0, 360)})
 tween:Play()
 
 local pulseTween = TweenService:Create(glow, TweenInfo.new(2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {Transparency = 0.1})
 pulseTween:Play()
 
-local originalSize = button.Size
-local originalColor = button.BackgroundColor3
+local function applyButtonEffects(btn)
+    local originalSize = btn.Size
+    local originalColor = btn.BackgroundColor3
 
-button.MouseEnter:Connect(function()
-    local hoverTween = TweenService:Create(button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-        Size = UDim2.new(originalSize.X.Scale * 1.05, originalSize.X.Offset, originalSize.Y.Scale * 1.05, originalSize.Y.Offset),
-        BackgroundColor3 = Color3.fromRGB(0, 140, 255)
-    })
-    hoverTween:Play()
-end)
+    btn.MouseEnter:Connect(function()
+        local hoverTween = TweenService:Create(btn, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Size = UDim2.new(originalSize.X.Scale * 1.05, originalSize.X.Offset, originalSize.Y.Scale * 1.05, originalSize.Y.Offset),
+            BackgroundColor3 = Color3.fromRGB(0, 140, 255)
+        })
+        hoverTween:Play()
+    end)
 
-button.MouseLeave:Connect(function()
-    local leaveTween = TweenService:Create(button, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-        Size = originalSize,
-        BackgroundColor3 = originalColor
-    })
-    leaveTween:Play()
-end)
+    btn.MouseLeave:Connect(function()
+        local leaveTween = TweenService:Create(btn, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Size = originalSize,
+            BackgroundColor3 = originalColor
+        })
+        leaveTween:Play()
+    end)
 
-button.MouseButton1Down:Connect(function()
-    local clickTween = TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-        Size = UDim2.new(originalSize.X.Scale * 0.95, originalSize.X.Offset, originalSize.Y.Scale * 0.95, originalSize.Y.Offset)
-    })
-    clickTween:Play()
-end)
+    btn.MouseButton1Down:Connect(function()
+        local clickTween = TweenService:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Size = UDim2.new(originalSize.X.Scale * 0.95, originalSize.X.Offset, originalSize.Y.Scale * 0.95, originalSize.Y.Offset)
+        })
+        clickTween:Play()
+    end)
 
-button.MouseButton1Up:Connect(function()
-    local releaseTween = TweenService:Create(button, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-        Size = originalSize
-    })
-    releaseTween:Play()
-end)
+    btn.MouseButton1Up:Connect(function()
+        local releaseTween = TweenService:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            Size = originalSize
+        })
+        releaseTween:Play()
+    end)
+end
+
+applyButtonEffects(button)
+applyButtonEffects(button2)
+applyButtonEffects(button3)
+applyButtonEffects(button4)
+applyButtonEffects(button5)
 
 button.MouseButton1Click:Connect(function()
     local args = {
         "KidzBop2025",
         "2"
     }
-
     while true do
         for i = 1, 2000 do
             args[2] = tostring(i)
@@ -156,4 +311,32 @@ button.MouseButton1Click:Connect(function()
             wait(0.1)
         end
     end
+end)
+
+button2.MouseButton1Click:Connect(function()
+    local args = {
+        "UGC1"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Databases"):WaitForChild("KidzBopEvent"):WaitForChild("ClaimReward"):FireServer(unpack(args))
+end)
+
+button3.MouseButton1Click:Connect(function()
+    local args = {
+        "UGC2"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Databases"):WaitForChild("KidzBopEvent"):WaitForChild("ClaimReward"):FireServer(unpack(args))
+end)
+
+button4.MouseButton1Click:Connect(function()
+    local args = {
+        "UGC3"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Databases"):WaitForChild("KidzBopEvent"):WaitForChild("ClaimReward"):FireServer(unpack(args))
+end)
+
+button5.MouseButton1Click:Connect(function()
+    local args = {
+        "UGC4"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Databases"):WaitForChild("KidzBopEvent"):WaitForChild("ClaimReward"):FireServer(unpack(args))
 end)
